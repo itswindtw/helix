@@ -8,7 +8,7 @@ license-file:        LICENSE
 author:              Meng-Hsin Tung, LUĀ Tîng-Giān
 maintainer:          ???, banacorn@gmail.com
 copyright:           (c) 2017-2017 Meng-Hsin Tung, Luā Tîng-Giān
-category:            Web
+category:            Graphics
 build-type:          Simple
 extra-source-files:  README.md
 cabal-version:       >=1.10
