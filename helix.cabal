@@ -1,0 +1,41 @@
+name:                helix
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/itswindtw/helix#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Meng-Hsin Tung, LUĀ Tîng-Giān
+maintainer:          ???, banacorn@gmail.com
+copyright:           (c) 2017-2017 Meng-Hsin Tung, Luā Tîng-Giān
+category:            Web
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Lib
+  build-depends:       base >= 4.7 && < 5
+  default-language:    Haskell2010
+
+executable helix-exe
+  hs-source-dirs:      app
+  main-is:             Main.hs
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , helix
+  default-language:    Haskell2010
+
+test-suite helix-test
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  build-depends:       base
+                     , helix
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/banacorn/helix
